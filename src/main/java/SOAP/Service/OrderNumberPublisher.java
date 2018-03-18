@@ -7,7 +7,12 @@ import SOAP.Service.OrderNumberImpl;
 public class OrderNumberPublisher{
 	
 	public static void main(String[] args) {
-	   Endpoint.publish("https://webshopsoap.herokuapp.com/ws/ordernumber", new OrderNumberImpl());
+		
+		String port = System.getenv("PORT");
+		String host = "http://0.0.0.0:";
+		String uri = "/ws/ordernumber";
+		
+	   Endpoint.publish(host+port+uri, new OrderNumberImpl());
     }
 
 }
