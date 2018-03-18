@@ -7,7 +7,7 @@ import SOAP.Service.OrderNumberImpl;
 public class OrderNumberPublisher{
 	
 	public static void main(String[] args) {
-	   Endpoint.publish("http://localhost:9999/ws/ordernumber", new OrderNumberImpl());
+	   Endpoint.publish("https://webshopsoap.herokuapp.com/ws/ordernumber", new OrderNumberImpl());
     }
 
 }
