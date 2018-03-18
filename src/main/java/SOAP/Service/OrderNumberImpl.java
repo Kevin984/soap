@@ -27,7 +27,7 @@ private String r ="0";
 
 public String getRandomOrdernumber(String naam, String straat, String straatnummer, double bedrag) {
 	try {
-		TimeUnit.SECONDS.sleep(30);
+		TimeUnit.SECONDS.sleep(20);
 		r = randomDecimalString(24);
 	} catch (InterruptedException e) {
 		e.printStackTrace();
